@@ -1,0 +1,1322 @@
+```html
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#16090e">
+<meta name="description" content="A special letter for Cinta — 1 Oktober 2026">
+
+<title>For Cinta — 01.10.2026 🌹</title>
+
+<style>
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+    background: #11070b;
+    color: #fff;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+/* =========================================================
+   VARIABLES
+========================================================= */
+
+:root {
+    --wine: #4b1426;
+    --dark-wine: #1b080f;
+    --rose: #e99aaa;
+    --light-rose: #ffd9e0;
+    --gold: #e8c38c;
+    --cream: #fff7f0;
+    --brown: #4a2417;
+}
+
+/* =========================================================
+   BACKGROUND
+========================================================= */
+
+.page {
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+    background:
+        radial-gradient(
+            circle at 50% -10%,
+            rgba(155, 52, 80, .45),
+            transparent 38%
+        ),
+        radial-gradient(
+            circle at 15% 55%,
+            rgba(103, 28, 50, .20),
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at 85% 75%,
+            rgba(126, 57, 39, .16),
+            transparent 35%
+        ),
+        linear-gradient(
+            145deg,
+            #16080d,
+            #260d17 45%,
+            #10060a
+        );
+}
+
+/* =========================================================
+   SOFT LIGHT
+========================================================= */
+
+.light {
+    position: fixed;
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    pointer-events: none;
+    filter: blur(80px);
+    opacity: .16;
+    z-index: 0;
+    animation: lightMove 14s ease-in-out infinite alternate;
+}
+
+.light.one {
+    top: 10%;
+    left: -150px;
+    background: #ff6688;
+}
+
+.light.two {
+    right: -150px;
+    bottom: 10%;
+    background: #d89b58;
+    animation-delay: -5s;
+}
+
+@keyframes lightMove {
+    from {
+        transform: translate3d(0,0,0);
+    }
+
+    to {
+        transform: translate3d(80px,-30px,0);
+    }
+}
+
+/* =========================================================
+   PARTICLES
+   CSS ONLY — LIGHTWEIGHT
+========================================================= */
+
+.particles {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.particle {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: rgba(255, 218, 225, .65);
+    box-shadow: 0 0 12px rgba(255, 180, 200, .8);
+    animation: floatParticle 9s linear infinite;
+}
+
+.particle:nth-child(1) {
+    left: 8%;
+    top: 80%;
+    animation-delay: -2s;
+}
+
+.particle:nth-child(2) {
+    left: 18%;
+    top: 35%;
+    animation-delay: -6s;
+}
+
+.particle:nth-child(3) {
+    left: 32%;
+    top: 70%;
+    animation-delay: -4s;
+}
+
+.particle:nth-child(4) {
+    left: 49%;
+    top: 50%;
+    animation-delay: -8s;
+}
+
+.particle:nth-child(5) {
+    left: 65%;
+    top: 75%;
+    animation-delay: -1s;
+}
+
+.particle:nth-child(6) {
+    left: 77%;
+    top: 30%;
+    animation-delay: -5s;
+}
+
+.particle:nth-child(7) {
+    left: 90%;
+    top: 65%;
+    animation-delay: -7s;
+}
+
+@keyframes floatParticle {
+    0% {
+        transform: translateY(30px) scale(.5);
+        opacity: 0;
+    }
+
+    20% {
+        opacity: .7;
+    }
+
+    80% {
+        opacity: .7;
+    }
+
+    100% {
+        transform: translateY(-130px) scale(1);
+        opacity: 0;
+    }
+}
+
+/* =========================================================
+   FLOWERS
+========================================================= */
+
+.flower {
+    position: absolute;
+    pointer-events: none;
+    user-select: none;
+    opacity: .65;
+    filter: blur(.2px);
+}
+
+.flower.f1 {
+    left: 5%;
+    top: 15%;
+    font-size: 42px;
+    animation: flowerFloat 8s ease-in-out infinite;
+}
+
+.flower.f2 {
+    right: 7%;
+    top: 23%;
+    font-size: 35px;
+    animation: flowerFloat 10s ease-in-out infinite reverse;
+}
+
+.flower.f3 {
+    left: 10%;
+    bottom: 15%;
+    font-size: 30px;
+    animation: flowerFloat 9s ease-in-out infinite;
+}
+
+.flower.f4 {
+    right: 12%;
+    bottom: 9%;
+    font-size: 45px;
+    animation: flowerFloat 11s ease-in-out infinite reverse;
+}
+
+@keyframes flowerFloat {
+    0%,100% {
+        transform: translate3d(0,0,0) rotate(-5deg);
+    }
+
+    50% {
+        transform: translate3d(0,-18px,0) rotate(6deg);
+    }
+}
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero {
+    position: relative;
+    z-index: 3;
+    min-height: 100svh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.hero-content {
+    width: min(900px, 100%);
+    animation: heroIn 2s cubic-bezier(.2,.8,.2,1);
+}
+
+@keyframes heroIn {
+    from {
+        opacity: 0;
+        transform: translateY(35px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* =========================================================
+   ROSE ICON
+========================================================= */
+
+.rose {
+    font-size: clamp(55px, 12vw, 90px);
+    display: inline-block;
+    filter:
+        drop-shadow(0 10px 25px rgba(255, 100, 140, .25));
+    animation: roseBreath 5s ease-in-out infinite;
+}
+
+@keyframes roseBreath {
+    0%,100% {
+        transform: scale(1) rotate(-2deg);
+    }
+
+    50% {
+        transform: scale(1.06) rotate(2deg);
+    }
+}
+
+/* =========================================================
+   MINI TEXT
+========================================================= */
+
+.eyebrow {
+    margin-top: 22px;
+    color: #eab1bd;
+    font-size: 11px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.title {
+    margin-top: 12px;
+    font-size: clamp(45px, 10vw, 100px);
+    line-height: .95;
+    font-weight: 500;
+    letter-spacing: -2px;
+
+    background:
+        linear-gradient(
+            120deg,
+            #fff,
+            #ffdce4 35%,
+            #e9a0b1 65%,
+            #e8c38c
+        );
+
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+
+    text-shadow: 0 10px 35px rgba(0,0,0,.25);
+}
+
+/* =========================================================
+   DATE
+========================================================= */
+
+.date {
+    margin-top: 22px;
+    color: #e8c38c;
+    font-size: 14px;
+    letter-spacing: 5px;
+}
+
+/* =========================================================
+   INTRO
+========================================================= */
+
+.intro {
+    width: min(620px, 100%);
+    margin: 25px auto 0;
+    color: #e6cfd5;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+/* =========================================================
+   BUTTON
+========================================================= */
+
+.open-btn {
+    position: relative;
+    margin-top: 32px;
+    padding: 15px 27px;
+
+    border: 1px solid rgba(255,255,255,.2);
+    border-radius: 999px;
+
+    color: white;
+    background:
+        linear-gradient(
+            135deg,
+            rgba(137,43,68,.9),
+            rgba(71,20,37,.9)
+        );
+
+    box-shadow:
+        0 12px 35px rgba(0,0,0,.35),
+        inset 0 1px rgba(255,255,255,.12);
+
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+
+    transition:
+        transform .5s ease,
+        box-shadow .5s ease;
+}
+
+.open-btn:hover {
+    transform: translateY(-4px);
+    box-shadow:
+        0 18px 40px rgba(0,0,0,.45),
+        0 0 25px rgba(221,111,137,.12);
+}
+
+.open-btn:active {
+    transform: scale(.97);
+}
+
+/* =========================================================
+   CHOCOLATE
+========================================================= */
+
+.chocolate-wrapper {
+    margin: 48px auto 0;
+    width: 260px;
+    transform: perspective(700px) rotateX(7deg) rotateZ(-2deg);
+    filter: drop-shadow(0 25px 30px rgba(0,0,0,.35));
+}
+
+.chocolate-box {
+    padding: 13px;
+    border-radius: 17px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #6e3b23,
+            #29130b 55%,
+            #4b2414
+        );
+
+    border: 1px solid rgba(255,210,170,.14);
+
+    box-shadow:
+        inset 0 1px rgba(255,255,255,.12),
+        inset 0 -5px 15px rgba(0,0,0,.35);
+}
+
+.chocolate-grid {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 7px;
+}
+
+.choco {
+    aspect-ratio: 1;
+    border-radius: 6px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #8b4c2b,
+            #3a170d
+        );
+
+    box-shadow:
+        inset 2px 2px 4px rgba(255,255,255,.12),
+        inset -3px -3px 5px rgba(0,0,0,.4);
+}
+
+/* =========================================================
+   DIVIDER
+========================================================= */
+
+.divider {
+    width: min(500px, 80%);
+    height: 1px;
+    margin: 0 auto;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(232,195,140,.6),
+            transparent
+        );
+}
+
+/* =========================================================
+   LETTER SECTION
+========================================================= */
+
+.letter-section {
+    position: relative;
+    z-index: 4;
+    padding: 100px 18px 120px;
+}
+
+.letter {
+    position: relative;
+    width: min(850px, 100%);
+    margin: auto;
+    padding: clamp(27px, 6vw, 65px);
+
+    color: #49252e;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255,250,245,.98),
+            rgba(255,234,235,.97)
+        );
+
+    border-radius: 28px;
+
+    box-shadow:
+        0 40px 90px rgba(0,0,0,.45),
+        0 0 60px rgba(255,150,180,.07);
+
+    overflow: hidden;
+
+    opacity: 0;
+    transform: translateY(60px);
+
+    transition:
+        opacity 1.5s ease,
+        transform 1.5s cubic-bezier(.2,.8,.2,1);
+}
+
+.letter.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* decorative corners */
+
+.letter::before {
+    content: "🌸";
+    position: absolute;
+    top: 12px;
+    right: 18px;
+    font-size: 65px;
+    opacity: .12;
+    transform: rotate(20deg);
+}
+
+.letter::after {
+    content: "🍫";
+    position: absolute;
+    bottom: 12px;
+    left: 18px;
+    font-size: 55px;
+    opacity: .10;
+    transform: rotate(-12deg);
+}
+
+/* =========================================================
+   LETTER TITLE
+========================================================= */
+
+.letter-title {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+.letter-title h2 {
+    font-size: clamp(31px, 7vw, 52px);
+    font-weight: 500;
+    color: #702d44;
+}
+
+.letter-title span {
+    display: block;
+    margin-top: 9px;
+    color: #a15e70;
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+/* =========================================================
+   LETTER BODY
+========================================================= */
+
+.letter-body {
+    position: relative;
+    z-index: 2;
+    margin-top: 40px;
+}
+
+.letter-body p {
+    margin-bottom: 22px;
+
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    line-height: 2;
+
+    color: #512b34;
+}
+
+.greeting {
+    font-family: Georgia, serif !important;
+    font-size: 21px !important;
+    color: #7a3049 !important;
+}
+
+/* =========================================================
+   HEART DIVIDER
+========================================================= */
+
+.hearts {
+    text-align: center;
+    margin: 30px 0;
+    font-size: 20px;
+    letter-spacing: 9px;
+    opacity: .8;
+}
+
+/* =========================================================
+   SIGNATURE
+========================================================= */
+
+.signature {
+    position: relative;
+    z-index: 2;
+    margin-top: 42px;
+    text-align: right;
+
+    color: #7a3049;
+    font-size: 23px;
+    line-height: 1.5;
+}
+
+.signature small {
+    display: block;
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    color: #a15e70;
+    margin-top: 4px;
+}
+
+/* =========================================================
+   FINAL SECTION
+========================================================= */
+
+.final {
+    position: relative;
+    z-index: 3;
+    padding: 90px 20px 110px;
+    text-align: center;
+}
+
+.final-heart {
+    font-size: 58px;
+    display: inline-block;
+
+    animation:
+        heartbeat 2.5s ease-in-out infinite;
+
+    filter:
+        drop-shadow(
+            0 10px 25px rgba(255,100,130,.2)
+        );
+}
+
+@keyframes heartbeat {
+    0%,100% {
+        transform: scale(1);
+    }
+
+    15% {
+        transform: scale(1.08);
+    }
+
+    30% {
+        transform: scale(1);
+    }
+
+    45% {
+        transform: scale(1.05);
+    }
+}
+
+.final h3 {
+    margin-top: 18px;
+    font-size: 27px;
+    font-weight: 400;
+    color: #ffd8e0;
+}
+
+.final p {
+    max-width: 500px;
+    margin: 14px auto 0;
+
+    color: #cbaab3;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+    position: relative;
+    z-index: 3;
+    padding: 0 20px 40px;
+    text-align: center;
+
+    color: #88626b;
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
+/* =========================================================
+   SCROLL INDICATOR
+========================================================= */
+
+.scroll {
+    margin-top: 38px;
+    opacity: .55;
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.scroll-line {
+    width: 1px;
+    height: 35px;
+    margin: 10px auto 0;
+    background: linear-gradient(
+        #fff,
+        transparent
+    );
+    animation: scrollLine 2.5s ease-in-out infinite;
+}
+
+@keyframes scrollLine {
+    0%,100% {
+        opacity: .2;
+        transform: scaleY(.6);
+    }
+
+    50% {
+        opacity: .8;
+        transform: scaleY(1);
+    }
+}
+
+/* =========================================================
+   MUSIC BUTTON
+========================================================= */
+
+.music {
+    position: fixed;
+    z-index: 100;
+    top: 18px;
+    right: 18px;
+
+    width: 45px;
+    height: 45px;
+
+    border-radius: 50%;
+    border: 1px solid rgba(255,255,255,.15);
+
+    color: white;
+    background: rgba(40,10,20,.65);
+
+    backdrop-filter: blur(10px);
+
+    cursor: pointer;
+    font-size: 18px;
+
+    transition: .4s;
+}
+
+.music:hover {
+    transform: rotate(8deg) scale(1.08);
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .hero {
+        padding: 35px 17px;
+    }
+
+    .eyebrow {
+        letter-spacing: 3px;
+    }
+
+    .title {
+        font-size: 49px;
+    }
+
+    .date {
+        font-size: 12px;
+        letter-spacing: 3px;
+    }
+
+    .intro {
+        font-size: 13px;
+    }
+
+    .chocolate-wrapper {
+        width: 220px;
+        margin-top: 38px;
+    }
+
+    .letter-section {
+        padding: 70px 13px 90px;
+    }
+
+    .letter {
+        padding: 28px 21px;
+        border-radius: 22px;
+    }
+
+    .letter-body p {
+        font-size: 14px;
+        line-height: 1.9;
+    }
+
+    .signature {
+        font-size: 20px;
+    }
+
+    .flower.f1 {
+        font-size: 28px;
+    }
+
+    .flower.f2 {
+        font-size: 25px;
+    }
+
+    .flower.f3 {
+        font-size: 22px;
+    }
+
+    .flower.f4 {
+        font-size: 30px;
+    }
+}
+
+/* =========================================================
+   REDUCE MOTION
+   Agar aman untuk pengguna yang mengaktifkan reduced motion
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+        transition-duration: .01ms !important;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="page">
+
+    <!-- LIGHT -->
+    <div class="light one"></div>
+    <div class="light two"></div>
+
+    <!-- PARTICLES -->
+    <div class="particles">
+        <span class="particle"></span>
+        <span class="particle"></span>
+        <span class="particle"></span>
+        <span class="particle"></span>
+        <span class="particle"></span>
+        <span class="particle"></span>
+        <span class="particle"></span>
+    </div>
+
+    <!-- FLOWERS -->
+    <div class="flower f1">🌸</div>
+    <div class="flower f2">🌷</div>
+    <div class="flower f3">🌼</div>
+    <div class="flower f4">🌺</div>
+
+    <!-- MUSIC -->
+    <button class="music" id="musicButton" onclick="toggleMusic()">
+        ♪
+    </button>
+
+    <!--
+        =====================================================
+        HERO
+        =====================================================
+    -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <div class="rose">🌹</div>
+
+            <div class="eyebrow">
+                A little website made with love
+            </div>
+
+            <h1 class="title">
+                Happy<br>
+                Girlfriend Day
+            </h1>
+
+            <div class="date">
+                01 • OCTOBER • 2026
+            </div>
+
+            <p class="intro">
+                Untuk seseorang yang sangat berarti.
+                Sebuah surat kecil, bunga, coklat,
+                dan semua kata yang mungkin tidak pernah
+                cukup untuk menggambarkan perasaan ini.
+            </p>
+
+            <button class="open-btn" onclick="openLetter()">
+                💌 &nbsp; Buka Surat Untuk Cinta
+            </button>
+
+            <!-- CHOCOLATE -->
+            <div class="chocolate-wrapper">
+
+                <div class="chocolate-box">
+
+                    <div class="chocolate-grid">
+
+                        <div class="choco"></div>
+                        <div class="choco"></div>
+                        <div class="choco"></div>
+                        <div class="choco"></div>
+
+                        <div class="choco"></div>
+                        <div class="choco"></div>
+                        <div class="choco"></div>
+                        <div class="choco"></div>
+
+                        <div class="choco"></div>
+                        <div class="choco"></div>
+                        <div class="choco"></div>
+                        <div class="choco"></div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="scroll">
+                scroll slowly
+                <div class="scroll-line"></div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- DIVIDER -->
+
+    <div class="divider"></div>
+
+
+    <!-- =====================================================
+         LETTER
+    ====================================================== -->
+
+    <section class="letter-section">
+
+        <article class="letter" id="letter">
+
+            <div class="letter-title">
+
+                <h2>
+                    Untuk Kakak Cintaa 🌸
+                </h2>
+
+                <span>
+                    01 Oktober 2026 · Hari Girlfriend Sedunia
+                </span>
+
+            </div>
+
+
+            <div class="letter-body">
+
+                <p class="greeting">
+                    hay cintaa 🥹
+                </p>
+
+                <p>
+                    selamat hari girlfriend seduniaa, mungkin ini hari
+                    bahagia buat kamu, aku fajar anugrah pratama,
+                    yang berhasil bikin hati aku and kamu bahagia
+                    karena sudah sampe ulang tahun kamu kemaren kan?
+                    terimakasih atas smuanya yang kakak cinta kasih ke aku yahh,
+                    semua usaha kakak cinta kepadaku, semua nya kepadaku.
+                </p>
+
+                <p>
+                    em mungkin diluar sana banyak cowok yang lebih dari aku.
+                    effort e lebih dari aku. sabar e lebih dari aku.
+                    inget o ya kakak cintaa. ngga smua orang punya
+                    kesabaran seng luasss. contohnya fajarr dulu anaknya
+                    sabar banget toh pas awal-awal ketemu/first date?.
+                    tapi sekarang berbeda kan.
+                </p>
+
+                <p>
+                    maaffin ya fajar minta maaff banget sama kamu,
+                    fajar cuma mau minta satu prmintaan aja.
+                    kawal aku sampe ulang tahun aku ya,
+                    sebanyak' nyaa masalalu fajar tidak ada sampe ke
+                    ulang tahun fajar. ngucapin saja tidak pernah,
+                    bkn tidak pernah lagi tidak ada.
+                </p>
+
+                <div class="hearts">
+                    🌸 🤎 🌸 🤎 🌸
+                </div>
+
+                <p>
+                    mungkin aku udah percaya banget sama kamu.
+                    aku uda kasih smua versi terbaikku bagi kamu
+                    smoga kamu betah-betah ya ditahan ya sampe ulang tahunku.
+                    toh fajar aja tahan sampe ulang tahun kakak cinta.
+                </p>
+
+                <p>
+                    semoga dilain hari bisa bahagia ya kakak cintaa,
+                    smoga bisa brubah apa seng dipikirno kakak cinta.
+                    aku juga mau ngomong ke kmu, semisal ya semisal.
+                    kmu mau slngkh diblkng aku, cwok iku ga sama kyo aku.
+                    beda sama aku, effort aku, usaha aku,
+                    smua seng tk miliki, beda toh?
+                </p>
+
+                <p>
+                    jadi kalo mau ngelakuin hal kaya gitu dipikir dulu ya cintaa,
+                    eh kalo ada ego itu diubah ya sayang cinta.
+                    ego boleh asal ngga nemen syang.
+                    kmu punya ego besar bgt, kya gunung ae,
+                    ego boleh tpi ga smpe ke hati ya sayang?
+                    udah tau cowo e kmu kya gitu.
+                </p>
+
+                <p>
+                    dipikir' duluu kalo mau ngmng gitu.
+                    cwo e kmu punya mental sedikit klo mslah
+                    prcintaan gini.
+                </p>
+
+                <p>
+                    inget ya sayang cinta,
+                    eh iya gaboleh mam pedes' juga gaboleh sering' juga sayang,
+                    gaboleh juga minum' es banyak" nanti tenggorokan e sakit,
+                    bukti e sakit kan?
+                </p>
+
+                <p>
+                    mngkne iku gaboleh trus' an makan mie,
+                    kemaren minggu mam miee, sama papa, mama,
+                    upan, sela, seli, truss mso maeng mam pop mie
+                    juga mbe es?
+                </p>
+
+                <p>
+                    aku mau marah ae tak tahan sayang demi kmu
+                    aku tau posisi e kmu skrng gmna,
+                    aku uda gabisa marah' lagi ke kamu.
+                    aku udah hati' banget khilngn kmu.
+                </p>
+
+                <div class="hearts">
+                    🤎 🥹 🤎
+                </div>
+
+                <p>
+                    kmu hrpan trahirku.
+                </p>
+
+                <p>
+                    aku harap kmu tahan ya sama aku sampe ulang tahun aku.
+                    smoga bisa ya, smoga kuatt..
+                    aku pngn bngtt diucapin saja,
+                    gausa dikado, gausa dibeliin apaa',
+                    aku cuma mau ucapan aja sayang cinta.
+                </p>
+
+                <p>
+                    maaff kalo ada salah kata maupun salah apapun itu
+                    diperkataanku tadi.
+                    maaaff yaa,
+                    i love you, i alwayss lovee youu sayang cintaa 💕🥹🙇🏻
+                </p>
+
+                <div class="signature">
+                    Dengan penuh cinta,
+                    <br>
+                    Fajar Anugrah Pratama 🤎
+
+                    <small>
+                        untuk seseorang yang sangat berarti
+                    </small>
+                </div>
+
+            </div>
+
+        </article>
+
+    </section>
+
+
+    <!-- =====================================================
+         FINAL
+    ====================================================== -->
+
+    <section class="final">
+
+        <div class="final-heart">
+            💗
+        </div>
+
+        <h3>
+            I always love you, Cinta.
+        </h3>
+
+        <p>
+            Tidak ada hadiah yang lebih besar dari rasa
+            saling menjaga, saling memahami, dan tetap
+            memilih untuk bertahan bersama.
+        </p>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        01.10.2026 · Made with love by Fajar 🤎
+
+    </footer>
+
+</div>
+
+
+<!-- =========================================================
+     JAVASCRIPT
+     SANGAT RINGAN
+========================================================= -->
+
+<script>
+
+/* =========================================================
+   OPEN LETTER
+========================================================= */
+
+function openLetter() {
+
+    const letter = document.getElementById("letter");
+
+    letter.classList.add("visible");
+
+    setTimeout(function() {
+
+        letter.scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+        });
+
+    }, 100);
+}
+
+
+/* =========================================================
+   SCROLL REVEAL
+========================================================= */
+
+const letter = document.getElementById("letter");
+
+const observer = new IntersectionObserver(
+    function(entries) {
+
+        entries.forEach(function(entry) {
+
+            if (entry.isIntersecting) {
+
+                entry.target.classList.add("visible");
+
+                observer.unobserve(entry.target);
+
+            }
+
+        });
+
+    },
+    {
+        threshold: 0.12
+    }
+);
+
+observer.observe(letter);
+
+
+/* =========================================================
+   MUSIC
+========================================================= */
+
+const musicButton =
+    document.getElementById("musicButton");
+
+/*
+    Kalau ingin menggunakan musik:
+
+    1. Letakkan file musik bernama:
+       music.mp3
+
+       di folder yang sama dengan index.html.
+
+    2. Buat elemen audio seperti:
+
+       <audio id="music" loop>
+           <source src="music.mp3" type="audio/mpeg">
+       </audio>
+*/
+
+let music = null;
+
+function toggleMusic() {
+
+    if (!music) {
+
+        alert(
+            "🎵 Musik belum dipasang.\n\n" +
+            "Letakkan file music.mp3 di folder yang sama " +
+            "dengan index.html."
+        );
+
+        return;
+    }
+
+    if (music.paused) {
+
+        music.play();
+
+        musicButton.innerHTML = "Ⅱ";
+
+    } else {
+
+        music.pause();
+
+        musicButton.innerHTML = "♪";
+
+    }
+}
+
+
+/* =========================================================
+   SMOOTH PARALLAX — RINGAN
+========================================================= */
+
+let ticking = false;
+
+window.addEventListener(
+    "scroll",
+    function() {
+
+        if (!ticking) {
+
+            window.requestAnimationFrame(function() {
+
+                const scroll =
+                    window.scrollY;
+
+                const flowers =
+                    document.querySelectorAll(".flower");
+
+                flowers.forEach(function(flower, index) {
+
+                    const speed =
+                        (index + 1) * 0.025;
+
+                    flower.style.transform =
+                        "translate3d(0," +
+                        (scroll * speed) +
+                        "px,0)";
+
+                });
+
+                ticking = false;
+
+            });
+
+            ticking = true;
+        }
+
+    },
+    {
+        passive: true
+    }
+);
+
+</script>
+
+</body>
+</html>
+```
